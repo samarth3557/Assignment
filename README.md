@@ -1,30 +1,8 @@
-## Prerequisites
+# React + Vite
 
-Before you begin, ensure you have met the following requirements:
-- Docker
-- Kubernetes
-- kubectl
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Commands
-- docker compose up --build
+Currently, two official plugins are available:
 
-- kubectl apply -f client-deployment.yaml
-- kubectl apply -f client-service.yaml
-- kubectl apply -f server-deployment.yaml
-- kubectl apply -f server-service.yaml
-
-- kubectl get deployments
-- kubectl get services
-
-- kubectl get pods
-
-
-- kubectl delete -f client-deployment.yaml
-- kubectl delete -f server-deployment.yaml
-- kubectl apply -f client-deployment.yaml
-- kubectl apply -f server-deployment.yaml
-- http://localhost:31535
-
-
-
-
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
